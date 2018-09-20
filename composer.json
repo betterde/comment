@@ -9,6 +9,24 @@
             "email": "george@betterde.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "illuminate/database": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Betterde\\Comment\\": "src/"
+        },
+        "files": [
+            "src/Helpers/CommentHelper.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Betterde\\Comment\\Providers\\CommentServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 }
