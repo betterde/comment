@@ -3,6 +3,7 @@
     "description": "Add comment content to migration file",
     "type": "library",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "George",
